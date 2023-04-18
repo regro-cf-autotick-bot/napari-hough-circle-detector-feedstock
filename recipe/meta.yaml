@@ -1,5 +1,5 @@
 {% set name = "napari-hough-circle-detector" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-hough-circle-detector-{{ version }}.tar.gz
-  sha256: f17ed5b57cd9e2a0007ef90b6eee8b3ef69b7e26dd6494445a4e15ad5d12e848
+  sha256: b6159b7fc5048264490f55cce11230d4a920709685adc4e6ae25bf44e4ef3b5b
 
 build:
   noarch: python
