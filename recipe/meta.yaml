@@ -17,13 +17,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8,<3.11
+    - python >=3.8
   run:
     - napari
     - numpy
-    - python >=3.8,<3.11
+    - python >=3.8
     - opencv
     - qtpy
+    - scikit-image
 
 test:
   imports:
