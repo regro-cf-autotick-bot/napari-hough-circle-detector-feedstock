@@ -19,6 +19,7 @@ requirements:
     - pip
     - python >=3.8
   run:
+    - magicgui
     - napari
     - numpy
     - python >=3.8
@@ -34,6 +35,7 @@ test:
     # - pip check  # Fails due to opencv-python-headless
   requires:
     - pip
+    - pyqt
 
 about:
   home: https://pypi.org/project/napari-hough-circle-detector/
