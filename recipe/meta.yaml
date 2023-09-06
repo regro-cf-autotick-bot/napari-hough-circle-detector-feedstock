@@ -1,5 +1,5 @@
 {% set name = "napari-hough-circle-detector" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-hough-circle-detector-{{ version }}.tar.gz
-  sha256: b6159b7fc5048264490f55cce11230d4a920709685adc4e6ae25bf44e4ef3b5b
+  sha256: 7305814107bd8b199eb25d9bc6cbea469bdd6f727e6208be7e7e502727942e6e
 
 build:
   noarch: python
@@ -19,6 +19,7 @@ requirements:
     - pip
     - python >=3.8
   run:
+    - magicgui
     - napari
     - numpy
     - python >=3.8
@@ -34,6 +35,7 @@ test:
     # - pip check  # Fails due to opencv-python-headless
   requires:
     - pip
+    - pyqt
 
 about:
   home: https://pypi.org/project/napari-hough-circle-detector/
